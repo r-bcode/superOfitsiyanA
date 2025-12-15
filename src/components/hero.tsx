@@ -20,7 +20,7 @@ export default function Hero() {
 
   const handleWhatsApp = () => {
     window.open(
-      "https://wa.me/998959846030?text=Salom,%20men%20Super%20Ofitsiant%20haqida%20qiziqyapman!%20😊",
+      "https://wa.me/998959846030?text=Salom,%20men%20Super%20Ofitsiant%20haqida%20qiziqyapman!%20",
       "_blank"
     );
   };
