@@ -60,6 +60,49 @@ export default function About() {
   return (
     <section className="bg-[#0b0b0d] text-white px-6 md:px-16 py-20">
       <div className="max-w-7xl mx-auto">
+      {/* ===== TOP AD IMAGE ===== */}
+<div className="mb-24">
+  {isClient && (
+    <>
+      {/* DESKTOP */}
+      {!isMobile && (
+        <div className="flex justify-center">
+          <Image
+            src="/about/desktop.png"
+            alt="About banner"
+            width={1400}
+            height={600}
+            priority
+            className="w-full max-w-7xl rounded-3xl object-cover shadow-[0_0_40px_rgba(79,158,255,0.25)] border border-[#1c1c22]"
+          />
+        </div>
+      )}
+
+      {/* MOBILE */}
+      {isMobile && (
+        <div className="flex flex-col gap-6 items-center">
+          <Image
+            src="/about/phone1.jpg"
+            alt="About mobile banner 1"
+            width={600}
+            height={800}
+            priority
+            className="w-full max-w-sm rounded-3xl object-cover shadow-[0_0_30px_rgba(79,158,255,0.2)] border border-[#1c1c22]"
+          />
+
+          <Image
+            src="/about/phone2.jpg"
+            alt="About mobile banner 2"
+            width={600}
+            height={800}
+            className="w-full max-w-sm rounded-3xl object-cover shadow-[0_0_30px_rgba(79,158,255,0.2)] border border-[#1c1c22]"
+          />
+        </div>
+      )}
+    </>
+  )}
+</div>
+
         <Fade triggerOnce direction="up">
           <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-16">
             {t("title")}
