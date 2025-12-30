@@ -26,7 +26,7 @@ export default function Hero() {
   };
 
   const handleTelegram = () => {
-    window.open("https://t.me/PPES571", "_blank");
+    window.open("https://t.me/rb_code", "_blank");
   };
 
   const handleEmail = () => {

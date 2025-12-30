@@ -27,7 +27,7 @@ export default function Footer() {
           <div className="flex items-center justify-center gap-5">
             {/* Telegram */}
             <a
-              href="https://t.me/PPES571"
+              href="https://t.me/rb_code"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-green-500 transition-colors"
@@ -49,7 +49,7 @@ export default function Footer() {
 
             {/* GitHub */}
             <a
-              href="https://github.com/rahmatillo9"
+              href="https://github.com/r-bcode"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-green-500 transition-colors"

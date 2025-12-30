@@ -30,14 +30,14 @@ export default function ContactSection() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-10">
             {/* Telegram */}
             <a
-              href="https://t.me/PPES571"
+              href="https://t.me/rb_code"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col items-center justify-center bg-[#111113] border border-[#1f1f24] hover:border-[#4f9eff] rounded-2xl py-6 transition-all hover:-translate-y-1 shadow-md hover:shadow-[0_0_15px_rgba(79,158,255,0.3)]"
             >
               <Send className="text-[#4f9eff] w-7 h-7 mb-2" />
               <p className="text-sm text-gray-400">Telegram</p>
-              <p className="font-semibold">@PPES571</p>
+              <p className="font-semibold">@rb_code</p>
             </a>
 
             {/* WhatsApp */}
