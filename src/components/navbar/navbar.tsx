@@ -4,6 +4,7 @@ import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@heroui/react";
 import {  Home, DollarSign, Info, MessageCircle } from "lucide-react";
 import LanguageSwitcher from "../leangugeS";
 import { useTranslations } from "next-intl";
+import RBLogo from "../logo";
 
 
 export default function NavbarB() {
@@ -25,15 +26,17 @@ export default function NavbarB() {
   
 
   return (
-    <Navbar
-
-      isBordered
-      maxWidth="xl"
-      className="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white px-4 md:px-8 shadow-md"
-    >
+    <>
+   <Navbar
+    isBordered
+    disableAnimation 
+    maxWidth="xl"
+    className="fixed top-0 left-0 w-full z-50 bg-gradient-to-r  bg-gray-900/70 backdrop-blur-md 
+                border-t border-gray-700/50 shadow-lg"
+  >
       {/* Brand */}
       <NavbarBrand className="flex items-center gap-2 cursor-pointer" onClick={() => handleSmoothScroll("#home")}>
-        <img src="/favicon.ico" alt="SO" className="h-6 w-6" />
+       <RBLogo/>
         <p className="font-bold text-lg text-green-400">Super Ofitsiyant</p>
       </NavbarBrand>
 
@@ -94,7 +97,7 @@ export default function NavbarB() {
         <LanguageSwitcher />
 
       </div>
-
+   </Navbar>
       {/* Mobile dropdown */}
 {/* Bottom Navigation (faqat mobil uchun) */}
 <div className="fixed bottom-0 left-0 w-full 
@@ -120,6 +123,7 @@ export default function NavbarB() {
   </button>
 </div>
 
-    </Navbar>
+ 
+    </>
   );
 }

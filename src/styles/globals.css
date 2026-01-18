@@ -1,10 +1,34 @@
 @import "tailwindcss";
 
-
+@plugin '../hero.ts';
 @keyframes fade-in {
   from { opacity: 0; transform: translateY(-5px); }
   to { opacity: 1; transform: translateY(0); }
 }
 .animate-fade-in {
   animation: fade-in 0.25s ease-out;
+}
+@source '../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+
+
+
+/* tailwind.config.js ga qo‘shish uchun */
+@layer utilities {
+  .animate-loading-progress {
+    animation: loading 2.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+  
+  .animate-shimmer {
+    animation: shimmer 3s linear infinite;
+  }
+}
+
+@keyframes loading {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(100%);  }
+}
+
+@keyframes shimmer {
+  0%   { transform: translateX(-150%) skewX(-20deg); }
+  100% { transform: translateX(150%)  skewX(-20deg); }
 }

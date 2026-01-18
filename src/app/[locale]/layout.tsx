@@ -5,6 +5,7 @@ import { routing } from "@/i18n/routing";
 import { NextIntlClientProvider } from 'next-intl';
 import NavbarB from "@/components/navbar/navbar";
 import Footer from "@/components/footer";
+import InitialLoader from "@/components/InitialLoader";
 
 export const metadata: Metadata = {
   title: "Super Ofitsiyant",
@@ -29,6 +30,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className="flex flex-col min-h-screen pb-7 md:pb-0 justify-between relative z-0 bg-[#0b0b0d] text-white ">
+        <InitialLoader>
         <NextIntlClientProvider locale={locale}>
           <main className="flex-1 flex flex-col items-center">
             <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -38,6 +40,7 @@ export default async function LocaleLayout({
             </div>
           </main>
         </NextIntlClientProvider>
+        </InitialLoader>
       </body>
     </html>
   );
