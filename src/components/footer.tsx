@@ -88,7 +88,7 @@ export default function Footer() {
           <p className="mt-2">
             {t("developedBy")}{" "}
             <Link
-              href="https://butcher4.uz"
+              href="https://rbcode.uz"
               target="_blank"
               className="text-green-500 font-semibold hover:underline"
             >

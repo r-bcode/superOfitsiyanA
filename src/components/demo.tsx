@@ -31,11 +31,11 @@ export default function DemoSection() {
           <p className="text-gray-300 mb-2">
             <strong>{t('link')}:</strong>{" "}
             <a
-              href="https://admin.butcher4.uz/"
+              href="https://so1a.plow.uz/"
               target="_blank"
               className="text-[#4f9eff] underline inline-flex items-center gap-1"
             >
-              https://admin.butcher4.uz/ <ExternalLink size={16} />
+              https://so1a.plow.uz/ <ExternalLink size={16} />
             </a>
           </p>
           <p className="text-gray-300">
@@ -55,22 +55,22 @@ export default function DemoSection() {
           <p className="text-gray-300 mb-2">
             <strong>{t('link')}</strong>{" "}
             <a
-              href="https://ofisiant.butcher4.uz/"
+              href="https://so.plow.uz/"
               target="_blank"
               className="text-[#4f9eff] underline inline-flex items-center gap-1"
             >
-              https://ofisiant.butcher4.uz/ <ExternalLink size={16} />
+              https://so.plow.uz/ <ExternalLink size={16} />
             </a>
           </p>
           <p className="text-gray-300">
-            <strong>Login:</strong> Ofisiant <br />
-            <strong>Password:</strong> 571632
+         
+            <strong>Password:</strong> 4444
           </p>
         </motion.div>
       </div>
 
       {/* Ogohlantirish */}
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3 }}
@@ -80,7 +80,7 @@ export default function DemoSection() {
         <p>
          {t('warning')}
         </p>
-      </motion.div>
+      </motion.div> */}
     </section>
   );
 }

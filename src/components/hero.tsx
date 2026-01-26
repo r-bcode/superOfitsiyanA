@@ -74,7 +74,8 @@ export default function Hero() {
     initial={{ opacity: 0, y: 10 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ delay: idx * 0.05 }}
-    className="flex items-center gap-2 text-gray-300"
+    className="flex items-center gap-2 text-gray-300 "
+    id=""
   >
     {/* Endi hamma uchun chek belgisi */}
     <Check size={18} className="text-[#4f9eff]" />
@@ -112,14 +113,14 @@ export default function Hero() {
       </motion.button>
 
       {/* 🆕 Demo tugmasi */}
-      {/* <motion.button
+      <motion.button
         onClick={() => handleSmoothScroll("#demo")}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         className="px-6 py-3 border border-[#10b981] rounded-2xl text-[#10b981] font-semibold hover:bg-[#1b1b1f] transition-all"
       >
         🎯 {t("demo")}
-      </motion.button> */}
+      </motion.button>
     </>
           ) : (
             <motion.div

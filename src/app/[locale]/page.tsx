@@ -1,7 +1,7 @@
 
 import About from "@/components/about";
 import ContactSection from "@/components/call";
-// import DemoSection from "@/components/demo";
+import DemoSection from "@/components/demo";
 import Hero from "@/components/hero";
 import Pricing from "@/components/pricing";
 export default function HomePage() {
@@ -21,7 +21,7 @@ export default function HomePage() {
      </div>
 
      <div>
-      {/* <DemoSection/> */}
+      <DemoSection/>
      </div>
      <div id="contact">
       <ContactSection/>
